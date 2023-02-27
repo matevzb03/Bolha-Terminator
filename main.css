@@ -1,0 +1,281 @@
+body{
+    background-color: rgb(38, 38, 38);
+    min-width: 250px;
+}
+.main{
+  background-color: rgb(52, 54, 57);
+  border-radius: 10px;
+  padding: 2%;
+}
+.header{
+  background-color: rgb(52, 54, 57);
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+.title{
+  padding: 1%;
+  color: #1c9e8b;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.checkbox_container{
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: rgb(52, 54, 57);
+  border-radius: 10px;
+  margin-top: 2%;
+}
+.footer{
+  background-color: rgb(52, 54, 57);
+  border-radius: 10px;
+  padding: 2%;
+  margin-top: 2%;
+}
+.removed_counter{
+  font-weight: bold;
+}
+.credits{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.credits a{
+  color: aliceblue;
+  text-decoration: none;
+}
+.credits a:hover{
+  color:#1c9e8b;
+}
+#ads_removed{
+    color: aliceblue;
+    padding: 2%;
+}
+.clear_keywords{
+    height: 30px;
+    padding: 1%;
+    position: relative;
+}
+.clear_keywords_button{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.clear_keywords_button button, .add_keywords button{
+    background-color: #1c9e8b;
+    border: none;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px;
+    border-radius: 4px;
+    transition: 0.7s ease-out;
+}
+.clear_keywords_button button:hover, .add_keywords button:hover {
+  background-color:#30bda8;
+  transition: 0.7s ease-out;
+}
+.add_keywords_box{
+  padding: 2%;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+.add_keywords{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add_keywords input{
+  background-color: #4b4b4b;
+  border: 1px solid #1c9e8b;
+  height: 26px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  color: aliceblue;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.add_keywords input::placeholder{
+  color: rgb(199, 205, 211);
+}
+.keyword{
+    border: solid 1px #1c9e8b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    font-weight: 100;
+    border-radius: 6px;
+    font-size: 14px;
+    height: 32px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #4b4b4b;
+}
+.keyword_button{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+}
+
+/* scrollbox */
+
+.my_scrollbox {
+  border: none;
+  padding: 5px;
+  margin-right: 2%;
+  font: 24px/36px sans-serif;
+  max-height: 138px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+  
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+  
+::-webkit-scrollbar-track {
+  border: 1px solid #1c9e8b;
+  border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+  background: #1c9e8b;  
+  border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+  background: #1c9e8b;  
+}
+
+/* scrollbox --end */
+
+/* keyword close button */
+.keyword button {
+  overflow: hidden;
+  position: relative;
+  border: none;
+  padding: 0;
+  width: 1.7em; height: 1.7em;
+  border-radius: 50%;
+  background: transparent;
+  color: aliceblue;
+  font: inherit;
+  text-indent: 100%;
+  cursor: pointer;
+  /*background: #1c9e8b;*/
+  transition: 0.4s;
+}
+      
+.keyword button:hover {
+  background-color: #1c9e8b; 
+  color: #252525;
+  opacity: .6;
+  transition: 0.4s;
+}
+
+.keyword button:before, .keyword button:after {
+  position: absolute;
+  top: 15%; left: calc(50% - .0625em);
+  width: .125em; height: 70%;
+  border-radius: .125em;
+  transform: rotate(45deg);
+  background: currentcolor;
+  content: ''
+}
+
+.keyword button:after {
+  transform: rotate(-45deg); 
+}
+/* keyword close button -- end */
+
+/* toggle switch */
+.checkboxes{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.checkboxes input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #6d6c6c;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 16px;
+width: 16px;
+left: 2px;
+bottom: 2px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #1c9e8b;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #1c9e8b;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(14px);
+-ms-transform: translateX(14px);
+transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 14px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+/* toggle switch -- end */
+    

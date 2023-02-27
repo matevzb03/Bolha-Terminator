@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="add_keywords_box">
+                <div class="add_keywords">
+                    <input type="text" id="keywords" placeholder="Vpišite ključne besede ..."><br>
+                    <button id="add_keyword_button">Dodaj</button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="my_scrollbox">
+                <div class="keyword_container" id="keyword_container"> 
+                </div>
+            </div>
+            <div class="clear_keywords">
+                <div class="clear_keywords_button">
+                    <button id="clear_keyword_button">Počisti Besede</button>
+                </div>
+            </div>
+        </div>
+        <div class="checkbox_container">
+            <div class="checkboxes">
+                Odstrani Trgovine
+                <label class="switch">
+                    <input type="checkbox" id="shops">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="checkboxes">
+                Odstrani Plačane Oglase
+                <label class="switch">
+                    <input type="checkbox" id="paid_ads">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="checkboxes">
+                Odstrani Oglase z Keywordi
+                <label class="switch">
+                    <input type="checkbox" id="remove_keywords">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="credits"> 
+                <div class="link">
+                    <a href="https://chrome.google.com/webstore/detail/bolha-terminator/ckhgdbedglenocplnnfjibkhnlamlimc" target="_blank">Store</a>
+                </div>
+                <div id="ads_removed">
+
+                </div>
+                <div class="link">
+                    <a href="https://github.com/GlitchBoii/Bolha-Terminator" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
