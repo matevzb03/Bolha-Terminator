@@ -9,6 +9,9 @@ Terminiranje oglasov lahko izklopite, in sicer posamezno za trgovine, plačane o
 
 Na dnu dodatka obstaja števec, ki prikaže, koliko oglasov je bilo odstranjenih, od kar ste dodali dodatek v chrome. Tam sta tudi link do chrome trgovine, če želite pustiti svoje mnenje ter link do kode na GitHub-u, če koga zanima.
 
+# Koda
+Dodatek je izkučno napisan v JavaScriptu. Koda za odstanjevanje oglasov živi v [Content-Script.js](content-script.js), vsa ostala koda za shranjevanje uporabniških nastavitev pa je shranjena v [Popup.js](popup.js).
+
 # Namestitev
 Namestitev je preposta, samo obiščete [Chrome Trgovino](https://chrome.google.com/webstore/detail/bolha-terminator/ckhgdbedglenocplnnfjibkhnlamlimc), ter kliknete "Add to Chrome"
 
