@@ -13,5 +13,5 @@ Na dnu dodatka obstaja števec, ki prikaže, koliko oglasov je bilo odstranjenih
 Namestitev je preposta, samo obiščete [Chrome Trgovino](https://chrome.google.com/webstore/detail/bolha-terminator/ckhgdbedglenocplnnfjibkhnlamlimc), ter kliknete "Add to Chrome"
 
 # Slike
-![image](https://user-images.githubusercontent.com/67975101/221522968-df9da024-a604-4dfd-93ad-5c143d4d7121.png)![image](https://user-images.githubusercontent.com/67975101/221523097-34eab2b7-01a6-465b-b2ab-7605e3a39c05.png)
+![image](https://user-images.githubusercontent.com/67975101/221524319-0634d5b8-2343-4efe-a6fb-2aa7b7cd2653.png)
 
